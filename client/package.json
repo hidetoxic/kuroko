@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "pnpm i && vite --config ./build/vite.dev.config.ts",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc && vite build --config ./build/vite.prod.config.ts",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix"
   },

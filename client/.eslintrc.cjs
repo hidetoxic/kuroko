@@ -40,7 +40,9 @@ module.exports = {
     ],
     'vue/singleline-html-element-content-newline': 0,
     'vue/html-self-closing': 0,
-    'vue/multi-word-component-names': 0
+    'vue/multi-word-component-names': 0,
+    // 会把形似v-model:value的报错
+    'vue/no-v-model-argument': 0
   },
   overrides: [
     {
@@ -48,7 +50,8 @@ module.exports = {
       rules: {
         'no-alert': isLocal ? 0 : 2,
         'no-console': isLocal ? 0 : 2,
-        'no-debugger': isLocal ? 0 : 2
+        'no-debugger': isLocal ? 0 : 2,
+        'no-unused-vars': 1
       }
     },
     // 解决ts文件下，某些定义被校验的问题

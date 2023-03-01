@@ -1,5 +1,5 @@
-declare namespace Duiba {
-        namespace StormRage {
+declare namespace Hidetoxic {
+        namespace Kuroko {
             namespace Util {
                 interface Route {
                     /** 路由地址 */

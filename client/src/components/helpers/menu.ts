@@ -1,6 +1,6 @@
 /** 生成边栏菜单 */
-export const getMenu = (routes:Duiba.StormRage.Util.Route[] = [], isRoot = true):any => {
-  return routes.map((route:Duiba.StormRage.Util.Route) => {
+export const getMenu = (routes:Hidetoxic.Kuroko.Util.Route[] = [], isRoot = true):any => {
+  return routes.map((route:Hidetoxic.Kuroko.Util.Route) => {
     const children = getMenu(route?.children, false)
 
     // 设置为菜单内不展示的就去除

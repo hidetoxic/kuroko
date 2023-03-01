@@ -1,6 +1,6 @@
 import _import from './_import'
 
-export const routes: Duiba.StormRage.Util.Route[] = [
+export const routes: Hidetoxic.Kuroko.Util.Route[] = [
   {
     path: '/',
     name: '首页',
@@ -14,7 +14,7 @@ export const routes: Duiba.StormRage.Util.Route[] = [
       {
         path: '/push-manage/custom',
         name: '自定义推送控制',
-        component: _import('push-manage/index')
+        component: _import('push-manage/custom/index')
       }
     ]
   },

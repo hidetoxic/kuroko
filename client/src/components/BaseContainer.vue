@@ -1,9 +1,7 @@
 <template>
   <n-layout-content>
     <div class="page-wrap">
-      <router-view>
-        <router-view />
-      </router-view>
+      <router-view />
     </div>
   </n-layout-content>
 </template>

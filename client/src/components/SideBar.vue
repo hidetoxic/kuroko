@@ -44,7 +44,6 @@ const collapsed = ref(false)
 
 watch(activeKey, () => {
   if (!activeKey.value) return
-  console.log('activeKey.value', activeKey.value)
   router.push({
     path: activeKey.value
   })

@@ -10,11 +10,12 @@
 <template>
   <div>
     Custom
+    <BarkConfig />
   </div>
 </template>
 
 <script setup lang="ts">
-
+import BarkConfig from './components/BarkConfig.vue'
 </script>
 
 <style scoped>

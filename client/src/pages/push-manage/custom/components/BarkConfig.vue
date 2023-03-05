@@ -37,7 +37,7 @@
         </NButton>
       </div>
     </NCard>
-    <NCard
+    <!-- <NCard
       title="推送消息配置"
       style="margin-top:8px;"
     >
@@ -52,7 +52,7 @@
           </n-select>
         </n-form-item>
       </n-form>
-    </NCard>
+    </NCard> -->
   </div>
 </template>
 

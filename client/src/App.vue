@@ -1,15 +1,17 @@
 <template>
   <n-config-provider :theme="isDark ? darkTheme : lightTheme" :theme-overrides="themeConfig">
-    <Header />
-    <BodyContainer>
-      <SideBar />
-      <BaseContainer />
-    </BodyContainer>
+    <n-notification-provider>
+      <Header />
+      <BodyContainer>
+        <SideBar />
+        <BaseContainer />
+      </BodyContainer>
+    </n-notification-provider>
   </n-config-provider>
 </template>
 
 <script setup lang="ts">
-import { darkTheme, lightTheme, NConfigProvider } from 'naive-ui'
+import { darkTheme, lightTheme, NConfigProvider, NNotificationProvider } from 'naive-ui'
 import { themeConfig } from './config'
 import SideBar from '@/components/SideBar.vue'
 import BaseContainer from '@/components/BaseContainer.vue'

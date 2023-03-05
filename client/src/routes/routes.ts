@@ -3,7 +3,7 @@ import _import from './_import'
 export const routes: Hidetoxic.Kuroko.Util.Route[] = [
   {
     path: '/',
-    name: '首页',
+    name: '使用指南',
     component: _import('home/index')
   },
   {

@@ -3,21 +3,25 @@ A configurable structural notifier based on Vue3/Vite and NestJs
 
 # Feature
 🔧 Several notify base supported(See at [Support List](#support-list))
+
 ⏱️ Scheduled tasks supported
 ****
 
 
 # Usage
 
-## Starting with Dockerodong
+## Starting with Docker
 
-Download Image
+### Download Image
 
-`docker pull hidetoxic/kuroko:latest`
+`docker pull hidetodong315/kuroko:latest`
 
-Start Container
+### Or build a new one
+docker build -t [name]/kuroko .
 
-`docker run -dt -p 8050:8050 -p 9050:9050 -v data/config:data/config`
+### Start Container
+
+`docker run -dt -p 8050:8050 -v data/config:data/config`
 
 ## Starting with NPM
 
@@ -34,5 +38,6 @@ then
 
 # API
 
-
 # Support List
+
+- Bark

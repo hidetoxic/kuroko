@@ -5,6 +5,8 @@ import path from 'path-browserify'
 import UnoCSS from 'unocss/vite'
 import { unocssConfig } from '../unocss.config'
 
+const proxyTarget = 'http://localhost:8050'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   resolve: {
@@ -12,6 +14,17 @@ export default defineConfig({
       '@': path.resolve(__dirname, '../', './src'),
       'vue': 'vue/dist/vue.esm-browser.js',
       'path': 'path-browserify'
+    }
+  },
+  server: {
+    host: '0.0.0.0',
+    open: true,
+    port: 8090,
+    proxy: {
+      '/api': {
+        target: proxyTarget,
+        changeOrigin: true
+      }
     }
   },
   plugins: [

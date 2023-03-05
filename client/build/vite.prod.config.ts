@@ -14,6 +14,7 @@ export default defineConfig({
       'path': 'path-browserify'
     }
   },
+  base: '/html/',
   build: {
     assetsDir: './assets',
     rollupOptions: {
@@ -23,6 +24,11 @@ export default defineConfig({
         assetFileNames: '[ext]/[name]-[hash].[ext]',
         manualChunks(id) {
           if (id.includes('node_modules')) {
+            // 防止静态文件服务器访问 /html/.pnpm-xxxxxx.js 时出错
+            if (id.toString().split('node_modules/')[1].split('/')[0].toString() === '.pnpm') {
+              return 'pnpm'
+            }
+
             return id.toString().split('node_modules/')[1].split('/')[0].toString()
           }
         }

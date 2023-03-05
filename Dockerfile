@@ -4,16 +4,16 @@ FROM node:18-alpine
 WORKDIR /kuroko
 
 # Cope WEB UI
-
-COPY ./client/dist ./client/dist
+COPY client/dist /kuroko/client/dist
 
 # Build Server
+COPY server/ /kuroko/server
+COPY server/dist /kuroko/server/dist
 
-COPY ./server/package*.json ./server/package*.json
+WORKDIR server
 
 RUN npm install
 
-EXPOSE 8050 9050
+EXPOSE 8050
 
-
-
+ENTRYPOINT [ "node","./dist/main.js" ]

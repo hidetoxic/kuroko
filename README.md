@@ -17,7 +17,7 @@ A configurable structural notifier based on Vue3/Vite and NestJs
 `docker pull hidetodong315/kuroko:latest`
 
 ### Or build a new one
-docker build -t [name]/kuroko .
+`docker build -t [name]/kuroko .`
 
 ### Start Container
 

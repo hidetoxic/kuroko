@@ -1,33 +1,51 @@
-#  Kuroko
+# Kuroko
+
 A configurable structural notifier based on Vue3/Vite and NestJs
 
-# Feature
+🚧 This project is current under heavy development.
+
+## Feature
+
 🔧 Several notify base supported(See at [Support List](#support-list))
 
 ⏱️ Scheduled tasks supported
 ****
 
+## Usage
 
-# Usage
+### Starting with Docker
 
-## Starting with Docker
+#### Docker usage
 
-### Download Image
+##### Download Image
 
 `docker pull hidetodong315/kuroko:latest`
 
-### Or build a new one
-`docker build -t [name]/kuroko .`
+##### Run Container
 
-### Start Container
+`docker run -dt -p 8050:8050 -p 8090:8090 -v data/config:data/config`
 
-`docker run -dt -p 8050:8050 -v data/config:data/config`
+#### Or using docker compose
 
-## Starting with NPM
+```docker-compose
+version: '3.3'
+services:
+    kuroko:
+        container_name: kuroko
+        volumes:
+            - <custom_path>:data/config
+        ports:
+            - '8050:8050'   # Port for server
+            - '8090:8090'   # Port for client
+        restart: always
+        image: hidetodong315/kuroko:latest
+```
+
+### Starting with NPM
 
 `pnpm run start`
 
-or prefered using `nr`
+or prefer using `nr`
 
 `npm i -g nr`
 
@@ -35,9 +53,8 @@ then
 
 `nr start`
 
+## API
 
-# API
+## Support List
 
-# Support List
-
-- Bark
+- Bark（WIP）

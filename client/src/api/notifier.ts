@@ -1,4 +1,4 @@
-import { baseRequest } from '@/lib/request'
+import { baseRequest } from '@/utils/request'
 
 export async function requestSendMessage(data:any) {
   return baseRequest({

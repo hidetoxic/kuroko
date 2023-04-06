@@ -1,6 +1,6 @@
 declare namespace Hidetoxic {
         namespace Kuroko {
-            namespace Util {
+            namespace Utils {
                 interface Route {
                     /** 路由地址 */
                     path: string,

@@ -8,7 +8,7 @@
  * HIDETOXIC - 版权所有
  */
 
-import { baseRequest } from '@/lib/request'
+import { baseRequest } from '@/utils/request'
 
 export async function requestConfigJson() {
   return baseRequest({

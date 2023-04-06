@@ -1,6 +1,6 @@
 import _import from './_import'
 
-export const routes: Hidetoxic.Kuroko.Util.Route[] = [
+export const routes: Hidetoxic.Kuroko.Utils.Route[] = [
   {
     path: '/',
     name: '使用指南',
@@ -12,7 +12,7 @@ export const routes: Hidetoxic.Kuroko.Util.Route[] = [
     component: _import('push-manage/index'),
     children: [
       {
-        path: '/push-manage/custom',
+        path: '/custom',
         name: '自定义推送控制',
         component: _import('push-manage/custom/index')
       }

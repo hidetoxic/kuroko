@@ -1,3 +1,3 @@
-import { defineStore } from 'pinia' 
+import { defineStore } from 'pinia'
 
-export const store = defineStore('system',{})
+export const store = defineStore('system', {})

@@ -12,7 +12,9 @@ module.exports = {
     'plugin:vue/essential',
     'plugin:vue/recommended',
     'plugin:vue/strongly-recommended',
-    './eslintrc-auto-imports.json'
+    './eslintrc-auto-imports.json',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended'
   ],
   plugins: ['vue'],
   rules: {
@@ -41,8 +43,10 @@ module.exports = {
     'vue/singleline-html-element-content-newline': 0,
     'vue/html-self-closing': 0,
     'vue/multi-word-component-names': 0,
-    // 会把形似v-model:value的报错
-    'vue/no-v-model-argument': 0
+    'vue/no-v-model-argument': 0,
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['error'],
+    '@typescript-eslint/no-explicit-any': 'off'
   },
   overrides: [
     {
@@ -62,9 +66,10 @@ module.exports = {
       }
     },
     {
-      'files': ['*.d.ts'],
+      'files': ['*.d.ts', '*.ts'],
       'rules': {
-        'no-unused-vars': 'off'
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': 1
       }
     }
   ],

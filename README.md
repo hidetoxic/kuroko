@@ -10,7 +10,7 @@
 
 ## Why
 
-Kuroko,is "黒子" in Japanese,the supporter of the majesty,do everything in shadow.
+Kuroko("黒子" in Japanese),is the supporter of the Japanese Samurai,and do everything in shadow to help the master.
 
 ## What is
 
